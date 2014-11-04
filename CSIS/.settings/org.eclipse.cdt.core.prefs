@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.2023955080/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.2023955080/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.2023955080/PATH/value=G\:\\eclipse\\MinGW\\bin;${MINGW_HOME}\\bin;${MSYS_HOME}\\bin;C\:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C\:\\Windows\\SYSTEM32;C\:\\Windows;C\:\\Windows\\SYSTEM32\\WBEM;C\:\\Windows\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C\:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C\:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;C\:\\Program Files\\Broadcom\\WHL\\;C\:\\Program Files\\Broadcom\\WHL\\syswow64;C\:\\Program Files\\Broadcom\\WHL\\SysWow64\\;C\:\\Program Files (x86)\\Livestreamer
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.2023955080/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.2023955080/appendContributed=true

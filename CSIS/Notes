@@ -1,0 +1,119 @@
+C complilation modeg:
+
+pre processing
+removes comments
+interprets preprocessor directives: #
+
+Compiler:
+source to assembly
+
+Assembler:
+assembly to machine code
+
+Linker:
+links any libraries and fucntions defined in other files
+------------------------------------------------------------------------
+pointers:
+arrays
+structures
+functions
+to build data structures
+
+Two Operators:
+* = to declare a pointer variable, dereference
+& = address of operator
+
+int *iptr (integer and integer pointer)
+
+void cubeByReference (int *iptr) {
+	*iptr = (*iptr)*(*iptr)*(*iptr);
+	printf("input cubed is %d\n", *iptr);
+}
+
+
+
+code review W3E1;
+
+
+
+
+Memory management:
+
+stack: a region of memory that stores temp into created by each function. Managed by the OS;
+Heap: much bigger! managed by me
+
+
+Programming tool: Lex 
+Lexical Scanning, take an input and look for patterns, and when found do something.
+decribe a set of patterns, and for each pattern give the c code we want executed.
+
+REGEX:
+.  <- matches any single char except newline
+*  <- 0 or more copies of what we specified
++  <- one or more
+?  <- zero or more
+[] <- character class, "any numeric[0-9]"
+^  <- match from beginning of a line
+[^] <- everything except whats in the class
+$ <- find at end of line
+{1,3} <- match 1 to 3 of previous pattern
+|  <- or
+
+excape chars: how to overload symbols
+
+Lex specification:
+definition section
+%%
+rules section
+%%
+routine
+
+
+Compiling Lex:
+flex (file.l) <- lexcompile
+gcc lex.yy.c -o (outputname) -Llib -lfl <- compile with the library
+outputname.exe < give it the file
+
+
+MIDTERM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Thursday next week oct 23.
+
+C++
+
+Object oriented
+Generic programming using templates
+namespaces
+in-line functions
+operator overloading
+memory management
+exception handling
+The Standard Template Library
+
+
+
+Classes___________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

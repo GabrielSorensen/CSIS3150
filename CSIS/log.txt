@@ -1,0 +1,18 @@
+14:57:47 **** Incremental Build of configuration Debug for project CSIS ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:4: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat=]
+    fprintf(fout, "%d\n%d\n%d\n", (int)col, (int)col*cos(i/10.0), (int)col*cos(i/10.0));
+    ^
+..\main.c:18:4: warning: format '%d' expects argument of type 'int', but argument 5 has type 'double' [-Wformat=]
+..\main.c:26:16: warning: unknown escape sequence: '\g' [enabled by default]
+  fprintf(fout, "\nif not exist %%DefaultGimp%%\gimp goto ERROR");
+                ^
+..\main.c:11:11: warning: variable 's' set but not used [-Wunused-but-set-variable]
+  int i,j, s;
+           ^
+gcc -o CSIS main.o 
+
+14:57:48 Build Finished (took 1s.280ms)
+
