@@ -30,5 +30,15 @@ int main () {
 	cout << "Y is now: ";
 	y.print();
 	cout << "GCD is: " << gcd(2000, 1000) << endl;
+	Ratio z;
+	x.setNumerator(2);
+	x.setDenominator(3);
+	y.setNumerator(2);
+	y.setDenominator(5);
+	x.print();
+	y.print();
+	cout << "x + y = "  << endl;
+	z = x+y;
+	z.print();
 }
 

@@ -6,19 +6,22 @@ using namespace std;
 
 class Ratio {
 	friend int gcd(int, int);
-	public:
-		Ratio(int, int);
-		int getNumerator();
-		int getDenominator();
-		void setNumerator(int);
-		void setDenominator(int);
-		double convert();
-		void invert();
-		void print();
-		void reduce();
-	private:
-		int num;
-		int den;
+	friend Ratio operator * (Ratio & x, Ratio & y);
+	friend Ratio operator + (Ratio & x, Ratio & y);
+public:
+	Ratio();
+	Ratio(int, int);
+	int getNumerator();
+	int getDenominator();
+	void setNumerator(int);
+	void setDenominator(int);
+	double convert();
+	void invert();
+	void print();
+	void reduce();
+private:
+	int num;
+	int den;
 };
 
 int gcd(int m, int n) {
@@ -30,6 +33,23 @@ int gcd(int m, int n) {
 		n = r;
 	}
 	return m;
+}
+
+Ratio operator * (Ratio & x, Ratio & y) {
+	Ratio z(x.num*y.num, x.den*y.den);
+	z.reduce();
+	return z;
+}
+
+Ratio operator + (Ratio & x, Ratio & y) {
+	Ratio z(x.num*y.den +  x.den*y.num, x.den * y.den);
+	z.reduce();
+	return z;
+}
+
+Ratio::Ratio() {
+	num = 0;
+	den = 0;
 }
 
 Ratio::Ratio(int numerator, int denominator) {
@@ -44,8 +64,8 @@ void Ratio::reduce() {
 		den = 1;
 	}
 	if (den < 0) {
-		 den *= -1;
-		 num *= -1;
+		den *= -1;
+		num *= -1;
 	}
 	if (den == 1) return;
 	sign = ( num < 0 ? -1 : 1);
