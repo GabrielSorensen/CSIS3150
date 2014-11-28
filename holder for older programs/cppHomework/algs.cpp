@@ -6,7 +6,6 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
-#include <queue>
 
 using namespace std;
 
@@ -81,17 +80,4 @@ int main () {
 	for (int i=0; i< vector2.size(); i++) {
 		cout << vector2.at(i) << endl;
 	}
-
-	priority_queue<string> q;
-	q.push(a);
-	q.push(b);
-	q.push(c);
-	q.push(d);
-	q.push(e);
-	q.push(f);
-	q.push(g);
-	q.push(h);
-	q.push(i);
-	q.push(j);
-
 }
